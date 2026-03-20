@@ -6,3 +6,6 @@ add the settings.py these
 - AUTH_USER_MODEL = 'accounts.User'
 - LOGIN_URL = '/accounts/login/' 
 - LOGIN_REDIRECT_URL = '/' 
+- Add to middleware
+    - ...
+    - 'accounts.middlewares.auth_mware.AdminLoginRestrictionMiddleware'
