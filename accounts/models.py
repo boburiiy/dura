@@ -9,14 +9,5 @@ class User(AbstractUser):
     bio = models.TextField(blank=True, null=True)
     email = models.EmailField(blank=True, null=True, default=None)
 
-    # class Meta:
-    #     constraints = [
-    #         models.UniqueConstraint(
-    #             fields=['email'],
-    #             condition=models.Q(email__isnull=False) & ~models.Q(email=''),
-    #             name='unique email'
-    #         )
-    #     ]
-
     def __str__(self) -> str:
         return self.username

@@ -1,0 +1,6 @@
+{% load crispy_forms_tags %}
+<form method="POST" action="{% url 'logout' %}">
+    {% csrf_token %}
+    do you really want to logout?
+    <input type="submit" value="logout">
+</form>

@@ -1,2 +1,5 @@
 core
-manage.py
+__pycache__
+*.pyc*
+*.sql*
+.venv
